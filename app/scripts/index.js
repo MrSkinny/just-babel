@@ -14,11 +14,9 @@ class Message {
 
 let testMsg = new Message("John", "We are transpiling down to ES5.");
 
-console.log(testMsg.display());
-
 $(function(){
   $('body').prepend('<div id="main"></div>');
-  $('#main').text("HEllo there!");
+  $('#main').text(testMsg.display());
   
 });
 
